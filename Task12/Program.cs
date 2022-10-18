@@ -24,7 +24,8 @@ bool Multiplicity(int num1, int num2)
     if(num1 % num2 == 0) return true;
     else return false;
 }
-if(Multiplicity(number1, number2)== true)
+
+if(Multiplicity(number1, number2) == true)
 {
     Console.Write($"{number1}, {number2} -> кратно");
 }
