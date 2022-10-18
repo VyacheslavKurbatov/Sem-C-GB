@@ -8,12 +8,12 @@
 int number = new Random().Next(100, 1000);
 Console.WriteLine($"Случайное трехзначное число => {number}");
 
-int MaxDigit(int num)
+int FirstAndThirdDigit(int num)
 {
     int firstDigit = num / 100;
     int thirdDigit = num % 10;
     return (firstDigit * 10) + thirdDigit;
 }
 
-int ftnumber = MaxDigit(number);
+int ftnumber = FirstAndThirdDigit(number);
 Console.Write($"Первая и третья цифра числа {number} -> {ftnumber}");
