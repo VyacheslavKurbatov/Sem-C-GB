@@ -15,5 +15,7 @@ int FirstAndThirdDigit(int num)
     return (firstDigit * 10) + thirdDigit;
 }
 
-int ftnumber = FirstAndThirdDigit(number);
-Console.Write($"Первая и третья цифра числа {number} -> {ftnumber}");
+// int ftnumber = FirstAndThirdDigit(number);
+// Console.Write($"Первая и третья цифра числа {number} -> {ftnumber}");
+
+Console.Write($"Первая и третья цифра числа {number} -> {FirstAndThirdDigit(number)}");
