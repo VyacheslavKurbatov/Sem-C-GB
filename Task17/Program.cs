@@ -19,6 +19,16 @@ int Quater(int xc, int yc)
     return 0;
 }
 
+// если тип void (ничего не возвращает) (так делать нельзя)
+// void Quater(int xc, int yc)  
+// {
+//     if (xc > 0 && yc > 0) Console.WriteLine(1);
+//     else if (xc < 0 && yc > 0) Console.WriteLine(2);
+//     else if (xc < 0 && yc < 0) Console.WriteLine(3);
+//     else if (xc > 0 && yc < 0) Console.WriteLine(4);
+//     Console.WriteLine(0);
+// }
+
 int quater = Quater(x, y);
 string result = quater > 0 ? $"Указанная координаты соответствует четверти -> {quater}" : "Введены некорректные координаты"; // тернарный оператор
 //         если quater > 0 то   выводим ...                                          иначе выводим ...
