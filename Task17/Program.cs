@@ -33,4 +33,4 @@ int quater = Quater(x, y);
 string result = quater > 0 ? $"Указанная координаты соответствует четверти -> {quater}" : "Введены некорректные координаты"; // тернарный оператор
 //         если quater > 0 то   выводим ...                                          иначе выводим ...
 
-Console.WriteLine(result);
+Console.WriteLine(result); 
