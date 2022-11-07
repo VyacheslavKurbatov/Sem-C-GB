@@ -37,4 +37,4 @@ int SumNumbers(int number)
 
 int sumNumbers = SumNumbers(num);
 
-Console.WriteLine($"{num} -> {sumNumbers}");
+Console.WriteLine($"Сумма чисел от 1 до {num} -> {sumNumbers}");
