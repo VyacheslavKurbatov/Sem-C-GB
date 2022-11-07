@@ -8,15 +8,25 @@
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
+// int QuantityNumbers(int number)
+// {
+//     int count = default;
+//     for (int i = 0; number >= 1; i++)
+//     {
+//         number = number / 10;
+//         count = count + 1; 
+//     }
+//     return count;
+// }
+
 int QuantityNumbers(int number)
 {
-    int count = default;
-    for (int i = 0; number >= 1; i++)
+    int i = default;
+    for (i = 0; number >= 1; i++)
     {
-        number = number / 10;
-        count = count + 1; 
+        number = number / 10; 
     }
-    return count;
+    return i;
 }
 
 int quantityNumberss = QuantityNumbers(num);
