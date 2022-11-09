@@ -27,3 +27,32 @@ if (extent > 0)
     Console.WriteLine($"число {number} в степени {extent} -> {exponent}");
 }
 else Console.WriteLine("Введите натуральную степень");
+
+// Console.WriteLine("Программа возводит число в степень");
+// Console.Write("Введите число: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите степень: ");
+// int extent = Convert.ToInt32(Console.ReadLine());
+
+// int Exponentiation(int num, int ext)
+//     {
+//         ext = Math.Abs(ext);
+//         int exponentiation = 1;
+//         for (int i = 0; i < ext; i++)
+//         {
+//             exponentiation = exponentiation * num;
+//         }
+//         return exponentiation;
+//     }
+
+// if (extent > 0)
+// {
+//     int exponent = Exponentiation(number, extent);
+//     Console.WriteLine($"число {number} в степени {extent} -> {exponent}");
+// }
+// else 
+// {
+//     double exponent = Exponentiation(number, extent);
+//     double negativeExponent = 1 / exponent;
+//     Console.WriteLine($"число {number} в степени {extent} = 1 / {exponent} = {negativeExponent}");
+// }
