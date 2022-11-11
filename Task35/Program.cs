@@ -39,3 +39,16 @@ int[] arr = CreateArrayRndInt(123, 0, 200);
 PrintArray(arr);
 int result = GetCountElements(arr);
 Console.WriteLine($"Колличество эдементов массива, из отрезка [10,99] = {result}");
+
+
+// double[] CreateArrayRndDouble(int size, int min, int max)  // int[] - тип данных массив
+// {
+//     double[] array = new double[size];
+//     Random rnd = new Random(); // Random тоже тип данных
+//     for (int i = 0; i < size; i++)
+//     {
+//             double num = array[i] = rnd.NextDouble() * (max - min) + min;
+//             array[i] = Math.Round(num, 1);
+//     }
+//     return array;
+// }
