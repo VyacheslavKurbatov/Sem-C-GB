@@ -12,8 +12,9 @@ int[] arr = CreateArrayRndInt(size, 0, 10);
 Console.WriteLine("Исходный массив");
 PrintArray(arr);
 int[] newArr = CopyArray(arr);
+
 Console.WriteLine("Скопированный массив");
-PrintArray(arr);
+PrintArray(newArr);
 
 int[] CreateArrayRndInt(int size, int min, int max)
 {
