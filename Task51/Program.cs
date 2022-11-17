@@ -12,17 +12,20 @@ int[,] array2D = CreateMatrixRndInt(rows, colums, 0, 10);
 PrintMatrix(array2D);
 
 Console.WriteLine();
- int sumDiagonal = SumDiagonal(array2D);
- Console.WriteLine($"{sumDiagonal}");
+int sumDiagonal = SumDiagonal(array2D);
+Console.WriteLine($"{sumDiagonal}");
 
 
 int SumDiagonal(int[,] matrix)
 {
     int sum = default;
+    int length = default;
+    if (matrix.GetLength(0) > matrix.GetLength(1)) length = matrix.GetLength(1);
+    else length = matrix.GetLength(0);
 
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < length; i++)
     {
-        sum = sum + matrix[i,i];
+        sum = sum + matrix[i, i];
     }
 
     // for (int i = 0; i < matrix.GetLength(0); i += 2)
