@@ -91,5 +91,5 @@ int ConvertEnteredData(string enteredData)  // проверяет введенн
         int index = Convert.ToInt32(enteredData);
         return index;
     }
-    else return -1;
+    else return -1; // число, которое не входит в искомый в задании диапазон (равносильно false)
 }
