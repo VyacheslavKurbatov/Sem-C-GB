@@ -45,10 +45,14 @@ int newColums2 = NewSizeArray(size: enterDataColums2,   // Проверяем, �
 //Программа
 
 int[,] matrix1 = CreateMatrixRndInt(newRows1, newColums1, 0, 10);
+Console.WriteLine();
+Console.WriteLine("Матрица 1");
 PrintMatrix(matrix1);
 Console.WriteLine();
 
 int[,] matrix2 = CreateMatrixRndInt(newRows2, newColums2, 0, 10);
+Console.WriteLine();
+Console.WriteLine("Матрица 2");
 PrintMatrix(matrix2);
 Console.WriteLine();
 
@@ -59,6 +63,7 @@ if (CheckRowsAndColums(newRows2, newColums1) == false)
 else
 {
     int[,] matrixMultiplication = MatrixMultiplication(matrix1, matrix2);
+    Console.WriteLine("Произведение 2х матриц равно:");
     PrintMatrix(matrixMultiplication);
 }
 
