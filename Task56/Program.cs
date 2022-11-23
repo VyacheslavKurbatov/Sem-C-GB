@@ -140,17 +140,17 @@ void PrintArray(int[] array) // Печатает одномерный масси
 
 int FindMaxOnArray(int[] array) // Находит максимум в массиве
 {
-    int max = array[0];
-    int maxIndex = 0;
+    int min = array[0];
+    int minIndex = 0;
     for (int i = 0; i < array.Length - 1; i++)
     {
-        if (array[i] > max)
+        if (array[i] < min)
         {
-            max = array[i];
-            maxIndex = i;
+            min = array[i];
+            minIndex = i;
         }
     }
-    return maxIndex;
+    return minIndex;
 }
 
 bool CheckRowsAndColums(int rows, int colums)
