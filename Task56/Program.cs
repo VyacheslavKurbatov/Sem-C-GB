@@ -57,7 +57,7 @@ PrintArray(arraySumOnRow); // Для проверки
 Console.WriteLine();
 
 int maxRow = FindMaxOnArray(arraySumOnRow);
-Console.Write($"Индекс строки с максимальной суммой элементов = {maxRow}");
+Console.Write($"Индекс строки с минимальной суммой элементов = {maxRow}");
 
 //Функции
 
