@@ -24,3 +24,31 @@ while (numB<0)
 
 int exponation = Exponation(numA, numB);
 Console.WriteLine($"возводит число {numA} в целую степень {numB} с помощью рекурсии -> {exponation}");
+
+// int InputNumber(string message)
+// {
+//     while (true)
+//     {
+//         Console.Write(message);
+//         bool result = int.TryParse(Console.ReadLine(), out int value);
+
+//         if (!result)
+//         {
+//             Console.WriteLine($"Введены некоректные данные. {message} еще раз!");
+//             Thread.Sleep(1500);
+//             Console.Clear();
+
+//             continue;
+//         }
+
+//         if (value < 0)
+//         {
+//             Console.WriteLine($"Число не может быть отрицательным. {message} еще раз!");
+//             Thread.Sleep(1500);
+//             Console.Clear();
+
+//             continue;
+//         }
+//         return value;
+//     }
+// }
