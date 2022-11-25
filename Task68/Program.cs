@@ -8,7 +8,7 @@ int n = InputNumber("Введите число N: ");
 int m = InputNumber("Введите число M: ");
 
 int akkermanFunction = AkkermanFunction(m, n);
-Console.WriteLine($"{akkermanFunction}");
+Console.WriteLine($"m = {m}, n = {n} -> A(m,n) = {akkermanFunction}");
 
 //Методы
 int InputNumber(string message) // Проверяет введеные данные
@@ -39,7 +39,7 @@ int InputNumber(string message) // Проверяет введеные данн�
     }
 }
 
-int AkkermanFunction(int m, int n)
+int AkkermanFunction(int m, int n) // Функция Аккермана
 {
     if (m == 0) return n + 1;
     if (m > 0 && n == 0) return AkkermanFunction(m - 1, 1);
